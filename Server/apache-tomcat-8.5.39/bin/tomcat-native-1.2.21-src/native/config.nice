@@ -1,0 +1,8 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--with-apr=/usr/local/apr/" \
+"--with-java-home=/usr/lib/jvm/java-12-oracle/" \
+"$@"

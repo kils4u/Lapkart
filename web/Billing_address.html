@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Online Laptop Purchese">
+        <meta name="author" content="Kailas Deshmukh, Bhushan Pagar, and Aniket Deshmukh">
+        <meta name="google-signin-client_id" content="328708861139-clmb6moukfv4ffk4v8oqmr24981jln32.apps.googleusercontent.com">
+        <title> Online Laptop Purchese </title>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/contry-state.js"></script>
+        <script src="js/billing_address.js"></script>
+        <link rel="stylesheet" href="css/Footer-with-social-icons.css">
+        <script>
+            Navbar_login();
+            Load_Amount();
+            Load_Personal();
+            init();
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar icon, search bar, login, cart-->
+        <nav class="mb-5">
+            
+        </nav>
+        <div class="row mb-2">
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #4B0082;">
+                    <div class="container">
+
+                            <div class="col-md-2">
+                                    <a class="navbar-brand" href="Home.html">Lapkart</a>
+                            </div>
+
+                            <div class="col-md-6">
+                                    <form class="form-inline">
+                                            <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search" aria-label="Search">
+                                            <button type="button" class="btn btn-primary" onclick="searchItem()">Search</button>
+                                    </form>
+                            </div>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="col-md-4">
+                                <div class="collapse navbar-collapse" id="navbar1">
+                                    <ul class="navbar-nav">
+                                            <li class="nav-item" id="user-tag">
+                                                    <a class="nav-link" href="login.html" id="Login-tag">Login & Register </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Help
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">Action</a>
+                                                            <a class="dropdown-item" href="#">Another action</a>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
+                                                    </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="Cart.html">
+                                                            Cart
+                                                            <span class="badge badge-light" id="cartItemCount">0</span>
+                                                    </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-7">
+                    <div class="mb-3">
+                    <div class="card">
+                        <h4 class="card-header">Personal</h4>
+                        <div class="card-body">
+                            <h5 class="card-title" id="name">Kailas Deshmukh</h5>
+                            <p class="card-text" id="email">kils.spartan@gmail.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                    <div class="card ">
+                        <h4 class="card-header">Contact</h4>
+                        <div class="card-body" id="Contact-Detail">
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 class="card-header">Address</h4>
+                        <div class="card-body" id="Address-Detail">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-md-4">
+                    <ul class="list-group" id="price-tag">
+                        <li class="list-group-item active">Price Details</li>
+                    </ul>
+                    <button type="button" id="checkout" style="visibility:hidden" onclick="place_order()" class="btn btn-outline-success btn-lg mt-3">Place Order</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!-- Model For add new contact -->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="AddNewContact" tabindex="-1" role="dialog" aria-labelledby="AddNewContactTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="AddNewContactTitle">Add new Contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    <label for="mob"> Contact : </label>
+                    <input type="text" class="form-control col-4" id="mob" placeholder="Mobile No" required onchange="check_mob('+' + this.value,document.getElementById('mob-feedback'))">
+                    <div class="invalid-feedback" id="mob-feedback">
+                        Enter valid Mobile No
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addNewContact()">Add</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Model for Add new Address -->
+        
+        <div class="modal fade" id="AddNewAddress" tabindex="-1" role="dialog" aria-labelledby="AddNewAddressTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="AddNewAddressTitle">New Address</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Address line 1:</label>
+                            <textarea class="form-control" id="addr1"></textarea>
+                            <div class="invalid-feedback" id="addr1-feedback">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Address line 1:</label>
+                            <textarea class="form-control" id="addr2"></textarea>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-6">
+                            <label for="country">Country</label>
+                            <select class="custom-select d-block w-100 col-11" id="country" onclick="add_country()" required="" onchange="add_state()">
+                                <option value="" selected="selected">country</option>
+                            </select>
+                            <div class="invalid-feedback" id="country-feedback">
+                            </div>
+                            </div>
+                            <div class="col-sm-6 float-right">
+                            <label for="state">State</label>
+                            <select class="custom-select d-block w-100 col-11" id="state" required="">
+                                <option value="" selected="selected">state</option>
+                            </select>
+                            <div class="invalid-feedback" id="state-feedback">
+                            </div>
+                            </div>
+                        </div>
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control col-3" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback" id="zip-feedback">
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addNewAddress()">Add</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1023 @@
+12-Apr-2019 00:16:02.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 00:16:02.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 00:16:02.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 00:16:02.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 00:16:02.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 00:16:02.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 00:16:02.005 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 00:16:02.011 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 00:16:02.091 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 00:16:02.099 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 00:16:02.115 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 00:16:02.158 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 00:16:02.163 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 00:16:02.164 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 00:16:02.165 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 438 ms
+12-Apr-2019 00:16:02.188 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 00:16:02.188 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 00:16:02.202 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 00:16:02.754 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 00:16:02.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [587] ms
+12-Apr-2019 00:16:02.790 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 00:16:02.815 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [25] ms
+12-Apr-2019 00:16:02.815 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 00:16:03.359 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [544] ms
+12-Apr-2019 00:16:03.359 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 00:16:03.395 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [36] ms
+12-Apr-2019 00:16:03.395 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 00:16:03.431 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [36] ms
+12-Apr-2019 00:16:03.431 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 00:16:03.459 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [28] ms
+12-Apr-2019 00:16:03.461 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 00:16:03.488 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 00:16:03.514 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 00:16:03.530 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1365 ms
+12-Apr-2019 00:16:03.873 INFO [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 00:16:04.192 INFO [http-nio-8080-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 00:16:04.194 INFO [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 00:30:12.592 WARNING [http-nio-8080-exec-13] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 00:30:13.100 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Lapkart]
+12-Apr-2019 00:31:15.117 INFO [http-nio-8080-exec-19] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 00:31:15.449 INFO [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 00:31:15.452 INFO [http-nio-8080-exec-19] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [335] ms
+12-Apr-2019 00:31:15.455 INFO [http-nio-8080-exec-20] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Lapkart]] after start() had already been called. The second call will be ignored.
+12-Apr-2019 00:44:15.602 SEVERE [https-openssl-apr-8443-exec-29] Search.processRequest null
+ org.postgresql.util.PSQLException: ERROR: column "b_name" does not exist
+  Hint: Perhaps you meant to reference the column "product.p_ram".
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:307)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:224)
+	at Search.processRequest(Search.java:263)
+	at Search.doPost(Search.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2157)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+12-Apr-2019 00:51:25.833 SEVERE [https-openssl-apr-8443-exec-22] Search.processRequest null
+ org.postgresql.util.PSQLException: ERROR: column "b_name" does not exist
+  Hint: Perhaps you meant to reference the column "product.p_ram".
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:307)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:224)
+	at Search.processRequest(Search.java:263)
+	at Search.doPost(Search.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2157)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+12-Apr-2019 00:52:13.293 SEVERE [https-openssl-apr-8443-exec-22] Search.processRequest null
+ org.postgresql.util.PSQLException: ERROR: column "b_name" does not exist
+  Hint: Perhaps you meant to reference the column "product.p_ram".
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:307)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:224)
+	at Search.processRequest(Search.java:263)
+	at Search.doPost(Search.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2157)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+12-Apr-2019 00:54:31.049 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 00:54:31.062 WARNING [http-nio-8080-exec-21] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 00:54:31.405 INFO [http-nio-8080-exec-21] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 00:54:31.407 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 00:54:48.744 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 00:54:48.866 INFO [http-nio-8080-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 00:54:48.868 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 01:06:19.819 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 01:06:19.824 WARNING [http-nio-8080-exec-36] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 01:06:20.146 INFO [http-nio-8080-exec-36] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 01:06:20.148 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 01:13:15.464 SEVERE [https-openssl-apr-8443-exec-49] Search.processRequest null
+ org.postgresql.util.PSQLException: ERROR: syntax error at or near "select"
+  Position: 35
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:307)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:224)
+	at Search.processRequest(Search.java:231)
+	at Search.doPost(Search.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2157)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+12-Apr-2019 01:17:26.278 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 01:17:26.285 WARNING [http-nio-8080-exec-52] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 01:17:26.658 INFO [http-nio-8080-exec-52] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 01:17:26.663 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 01:19:12.848 INFO [http-nio-8080-exec-47] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 01:19:12.850 WARNING [http-nio-8080-exec-47] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 01:19:13.190 INFO [http-nio-8080-exec-47] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 01:19:13.191 INFO [http-nio-8080-exec-47] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 02:42:54.175 INFO [https-openssl-apr-8443-exec-67] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:479)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2157)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+12-Apr-2019 02:46:15.163 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 02:46:15.164 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 02:46:15.170 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 02:46:15.175 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 02:46:15.181 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 02:46:15.233 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 02:46:15.238 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 02:46:15.240 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 02:46:15.296 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 02:46:15.299 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 02:46:15.300 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 02:46:15.301 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 02:55:13.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 02:55:13.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 02:55:13.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 02:55:13.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 02:55:13.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 02:55:13.783 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 02:55:13.786 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 02:55:13.889 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 02:55:13.900 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 02:55:13.910 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 02:55:13.954 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 02:55:13.957 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 02:55:13.959 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 02:55:13.959 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 533 ms
+12-Apr-2019 02:55:13.984 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 02:55:13.984 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 02:55:13.998 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 02:55:14.558 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 02:55:14.598 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [601] ms
+12-Apr-2019 02:55:14.599 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 02:55:14.630 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [31] ms
+12-Apr-2019 02:55:14.630 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 02:55:15.188 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [558] ms
+12-Apr-2019 02:55:15.188 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 02:55:15.226 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [38] ms
+12-Apr-2019 02:55:15.226 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 02:55:15.258 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [32] ms
+12-Apr-2019 02:55:15.258 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 02:55:15.282 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [24] ms
+12-Apr-2019 02:55:15.290 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 02:55:15.295 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 02:55:15.302 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 02:55:15.308 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1348 ms
+12-Apr-2019 03:31:13.553 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 03:31:13.553 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 03:31:13.559 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 03:31:13.564 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 03:31:13.570 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 03:31:13.587 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 03:31:13.593 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 03:31:13.597 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 03:31:13.648 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 03:31:13.649 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 03:31:13.649 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 03:31:13.650 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 03:31:51.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 03:31:51.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 03:31:51.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 03:31:51.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 03:31:51.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 03:31:51.828 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 03:31:51.828 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 03:31:51.828 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 03:31:51.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 03:31:51.946 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 03:31:51.953 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 03:31:51.962 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 03:31:52.002 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 03:31:52.008 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 03:31:52.009 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 03:31:52.010 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 654 ms
+12-Apr-2019 03:31:52.031 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 03:31:52.031 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 03:31:52.051 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 03:31:52.616 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 03:31:52.645 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [594] ms
+12-Apr-2019 03:31:52.646 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 03:31:52.669 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [23] ms
+12-Apr-2019 03:31:52.669 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 03:31:53.213 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [543] ms
+12-Apr-2019 03:31:53.213 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 03:31:53.270 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [56] ms
+12-Apr-2019 03:31:53.270 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 03:31:53.328 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [58] ms
+12-Apr-2019 03:31:53.328 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 03:31:53.378 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [50] ms
+12-Apr-2019 03:31:53.382 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 03:31:53.403 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 03:31:53.422 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 03:31:53.429 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1418 ms
+12-Apr-2019 04:16:53.045 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:16:53.050 WARNING [http-nio-8080-exec-8] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 04:16:53.584 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:16:53.588 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:16:54.081 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:16:54.249 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:16:54.252 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:17:59.161 INFO [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:17:59.516 INFO [http-nio-8080-exec-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:17:59.518 INFO [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:18:45.648 INFO [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:18:46.012 INFO [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:18:46.014 INFO [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:24:01.061 INFO [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:24:01.483 INFO [http-nio-8080-exec-18] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:24:01.485 INFO [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:26:10.258 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:26:10.608 INFO [http-nio-8080-exec-9] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:26:10.610 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:29:34.993 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:29:35.442 INFO [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:29:35.445 INFO [http-nio-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:30:02.572 INFO [http-nio-8080-exec-15] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:30:02.709 INFO [http-nio-8080-exec-15] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:30:02.711 INFO [http-nio-8080-exec-15] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:32:14.904 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:32:15.308 INFO [http-nio-8080-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:32:15.316 INFO [http-nio-8080-exec-24] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:34:14.726 INFO [http-nio-8080-exec-31] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:34:15.170 INFO [http-nio-8080-exec-31] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:34:15.173 INFO [http-nio-8080-exec-31] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:34:19.800 INFO [http-nio-8080-exec-33] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:34:19.927 INFO [http-nio-8080-exec-33] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:34:19.929 INFO [http-nio-8080-exec-33] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:37:46.458 INFO [http-nio-8080-exec-38] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:37:46.789 INFO [http-nio-8080-exec-38] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:37:46.790 INFO [http-nio-8080-exec-38] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:37:54.972 INFO [http-nio-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:37:55.093 INFO [http-nio-8080-exec-29] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:37:55.095 INFO [http-nio-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:38:36.473 INFO [http-nio-8080-exec-38] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:38:36.894 INFO [http-nio-8080-exec-38] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:38:36.896 INFO [http-nio-8080-exec-38] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:39:08.059 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:39:08.387 INFO [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:39:08.389 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:40:19.826 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:40:20.247 INFO [http-nio-8080-exec-39] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:40:20.249 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:41:08.165 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:41:08.510 INFO [http-nio-8080-exec-43] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:41:08.516 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:41:31.261 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:41:31.376 INFO [http-nio-8080-exec-37] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:41:31.377 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:41:40.478 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:41:40.821 INFO [http-nio-8080-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:41:40.822 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:41:42.736 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:41:42.913 INFO [http-nio-8080-exec-44] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:41:42.915 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:41:55.599 INFO [http-nio-8080-exec-47] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:41:55.722 INFO [http-nio-8080-exec-47] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:41:55.723 INFO [http-nio-8080-exec-47] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:42:16.371 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:42:16.717 INFO [http-nio-8080-exec-44] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:42:16.719 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:43:39.263 INFO [http-nio-8080-exec-45] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:43:39.605 INFO [http-nio-8080-exec-45] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:43:39.607 INFO [http-nio-8080-exec-45] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:44:27.848 INFO [http-nio-8080-exec-48] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:44:28.186 INFO [http-nio-8080-exec-48] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:44:28.187 INFO [http-nio-8080-exec-48] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:44:30.551 INFO [http-nio-8080-exec-45] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:44:30.694 INFO [http-nio-8080-exec-45] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:44:30.696 INFO [http-nio-8080-exec-45] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:44:52.519 INFO [http-nio-8080-exec-46] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:44:52.677 INFO [http-nio-8080-exec-46] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:44:52.682 INFO [http-nio-8080-exec-46] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:45:16.517 INFO [http-nio-8080-exec-45] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:45:16.862 INFO [http-nio-8080-exec-45] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:45:16.864 INFO [http-nio-8080-exec-45] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:45:19.551 INFO [http-nio-8080-exec-38] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:45:19.670 INFO [http-nio-8080-exec-38] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:45:19.671 INFO [http-nio-8080-exec-38] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:47:27.521 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:47:27.846 INFO [http-nio-8080-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:47:27.848 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:48:25.762 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:48:26.116 INFO [http-nio-8080-exec-52] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:48:26.117 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:48:54.918 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:48:55.049 INFO [http-nio-8080-exec-60] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:48:55.051 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:49:51.469 INFO [http-nio-8080-exec-61] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:49:51.827 INFO [http-nio-8080-exec-61] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:49:51.831 INFO [http-nio-8080-exec-61] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:49:53.953 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:49:54.081 INFO [http-nio-8080-exec-60] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:49:54.082 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:51:31.908 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:51:32.285 INFO [http-nio-8080-exec-63] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:51:32.290 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:51:52.868 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:51:52.980 INFO [http-nio-8080-exec-52] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:51:52.982 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:52:47.996 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:52:48.327 INFO [http-nio-8080-exec-63] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:52:48.328 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:56:32.613 INFO [http-nio-8080-exec-64] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:56:32.960 INFO [http-nio-8080-exec-64] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:56:32.961 INFO [http-nio-8080-exec-64] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:56:34.524 INFO [http-nio-8080-exec-71] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:56:34.652 INFO [http-nio-8080-exec-71] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:56:34.653 INFO [http-nio-8080-exec-71] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:56:50.378 INFO [http-nio-8080-exec-56] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:56:50.515 INFO [http-nio-8080-exec-56] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:56:50.516 INFO [http-nio-8080-exec-56] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:57:15.463 INFO [http-nio-8080-exec-65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:57:15.806 INFO [http-nio-8080-exec-65] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:57:15.808 INFO [http-nio-8080-exec-65] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:57:32.269 INFO [http-nio-8080-exec-74] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:57:32.383 INFO [http-nio-8080-exec-74] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:57:32.384 INFO [http-nio-8080-exec-74] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:57:39.413 INFO [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:57:39.536 INFO [http-nio-8080-exec-68] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:57:39.538 INFO [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:58:25.599 INFO [http-nio-8080-exec-70] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:58:25.921 INFO [http-nio-8080-exec-70] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:58:25.922 INFO [http-nio-8080-exec-70] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:58:48.401 INFO [http-nio-8080-exec-77] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:58:48.560 INFO [http-nio-8080-exec-77] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:58:48.561 INFO [http-nio-8080-exec-77] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 04:59:32.744 INFO [http-nio-8080-exec-56] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 04:59:33.066 INFO [http-nio-8080-exec-56] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 04:59:33.068 INFO [http-nio-8080-exec-56] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 05:20:50.554 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 05:20:50.554 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:20:50.560 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:20:50.566 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:20:50.572 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 05:20:50.580 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:20:50.581 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:20:50.634 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:20:50.635 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:20:50.635 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:20:50.636 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:22:08.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 05:22:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 05:22:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 05:22:08.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:22:08.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:22:08.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 05:22:08.453 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 05:22:08.453 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 05:22:08.453 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 05:22:08.464 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 05:22:08.605 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:22:08.616 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 05:22:08.634 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:22:08.694 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 05:22:08.699 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:22:08.700 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 05:22:08.700 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 656 ms
+12-Apr-2019 05:22:08.722 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 05:22:08.722 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 05:22:08.739 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 05:22:09.341 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:22:09.376 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [636] ms
+12-Apr-2019 05:22:09.376 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 05:22:09.412 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [36] ms
+12-Apr-2019 05:22:09.412 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 05:22:09.994 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [582] ms
+12-Apr-2019 05:22:09.994 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 05:22:10.025 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [31] ms
+12-Apr-2019 05:22:10.025 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 05:22:10.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [61] ms
+12-Apr-2019 05:22:10.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 05:22:10.141 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [55] ms
+12-Apr-2019 05:22:10.162 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:22:10.180 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:22:10.199 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:22:10.213 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1512 ms
+12-Apr-2019 05:22:14.490 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 05:22:14.893 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:22:14.897 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 05:26:29.947 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 05:26:29.987 WARNING [http-nio-8080-exec-11] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 05:26:30.480 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:26:30.482 INFO [http-nio-8080-exec-11] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 05:26:43.386 INFO [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 05:26:43.558 INFO [http-nio-8080-exec-16] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:26:43.561 INFO [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 05:27:06.307 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 05:27:06.680 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:27:06.682 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 05:28:33.570 INFO [http-nio-8080-exec-20] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 05:28:33.918 INFO [http-nio-8080-exec-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:28:33.920 INFO [http-nio-8080-exec-20] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 05:34:27.756 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 05:34:27.756 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:34:27.762 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:34:27.768 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:34:27.773 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 05:34:27.785 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 05:34:27.789 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:34:27.791 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:34:27.842 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:34:27.843 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:34:27.843 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:34:27.844 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:38:59.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:38:59.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 05:38:59.519 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 05:38:59.520 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 05:38:59.520 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 05:38:59.525 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 05:38:59.641 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:38:59.653 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 05:38:59.669 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:38:59.726 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 05:38:59.731 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:38:59.732 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 05:38:59.733 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 653 ms
+12-Apr-2019 05:38:59.770 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 05:38:59.771 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 05:38:59.791 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 05:39:00.384 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:39:00.439 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [649] ms
+12-Apr-2019 05:39:00.440 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 05:39:00.488 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [48] ms
+12-Apr-2019 05:39:00.488 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 05:39:01.089 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [601] ms
+12-Apr-2019 05:39:01.089 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 05:39:01.129 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [40] ms
+12-Apr-2019 05:39:01.129 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 05:39:01.177 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [48] ms
+12-Apr-2019 05:39:01.177 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 05:39:01.214 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [37] ms
+12-Apr-2019 05:39:01.228 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 05:39:01.238 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 05:39:01.248 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 05:39:01.255 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1521 ms
+12-Apr-2019 05:39:04.037 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 05:39:04.404 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 05:39:04.407 INFO [http-nio-8080-exec-8] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 06:18:31.452 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 06:18:31.453 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 06:18:31.459 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 06:18:31.465 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 06:18:31.470 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 06:18:31.491 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 06:18:31.498 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 06:18:31.502 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 06:18:31.557 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 06:18:31.560 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 06:18:31.561 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 06:18:31.562 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 08:26:13.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 08:26:13.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 08:26:13.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 08:26:13.930 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 08:26:13.931 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 08:26:13.986 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 08:26:14.204 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 08:26:14.234 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 08:26:14.246 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 08:26:14.294 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 08:26:14.298 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 08:26:14.299 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 08:26:14.299 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1113 ms
+12-Apr-2019 08:26:14.334 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 08:26:14.334 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 08:26:14.364 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 08:26:15.578 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 08:26:15.659 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [1,296] ms
+12-Apr-2019 08:26:15.660 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 08:26:15.795 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [134] ms
+12-Apr-2019 08:26:15.795 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 08:26:17.821 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [2,026] ms
+12-Apr-2019 08:26:17.821 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 08:26:17.887 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [66] ms
+12-Apr-2019 08:26:17.887 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 08:26:17.966 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [79] ms
+12-Apr-2019 08:26:17.967 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 08:26:18.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [48] ms
+12-Apr-2019 08:26:18.030 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 08:26:18.041 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 08:26:18.050 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 08:26:18.052 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3752 ms
+12-Apr-2019 08:26:20.924 INFO [http-nio-8080-exec-10] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 08:26:21.325 INFO [http-nio-8080-exec-10] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 08:26:21.327 INFO [http-nio-8080-exec-10] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 10:13:49.961 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 10:13:49.961 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 10:13:49.968 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 10:13:49.973 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 10:13:49.980 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 10:13:50.010 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 10:13:50.029 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 10:13:50.030 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 10:13:50.082 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 10:13:50.083 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 10:13:50.084 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 10:13:50.084 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:01:41.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:01:41.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 11:01:41.878 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 11:01:41.879 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 11:01:41.879 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 11:01:41.929 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 11:01:42.194 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:01:42.217 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 11:01:42.232 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:01:42.276 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 11:01:42.285 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:01:42.286 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 11:01:42.287 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1101 ms
+12-Apr-2019 11:01:42.326 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 11:01:42.326 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 11:01:42.350 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 11:01:43.650 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:01:43.704 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [1,355] ms
+12-Apr-2019 11:01:43.705 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 11:01:43.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [84] ms
+12-Apr-2019 11:01:43.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 11:01:45.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [1,924] ms
+12-Apr-2019 11:01:45.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 11:01:45.768 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [55] ms
+12-Apr-2019 11:01:45.769 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 11:01:45.842 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [73] ms
+12-Apr-2019 11:01:45.843 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 11:01:45.886 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [43] ms
+12-Apr-2019 11:01:45.909 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:01:45.924 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:01:45.934 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:01:45.936 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3648 ms
+12-Apr-2019 11:17:55.687 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:17:55.695 WARNING [http-nio-8080-exec-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 11:17:56.115 INFO [http-nio-8080-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:17:56.117 INFO [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:18:42.295 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 11:18:42.295 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:18:42.301 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:18:42.306 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:18:42.312 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 11:18:42.329 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 11:18:42.335 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:18:42.336 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:18:42.390 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:18:42.391 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:18:42.392 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:18:42.393 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:19:29.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 11:19:29.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 11:19:29.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 11:19:29.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 11:19:29.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 11:19:29.734 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 11:19:29.737 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 11:19:29.854 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:19:29.861 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 11:19:29.878 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:19:29.925 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 11:19:29.930 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:19:29.931 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 11:19:29.933 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 631 ms
+12-Apr-2019 11:19:29.957 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 11:19:29.957 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 11:19:29.972 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 11:19:30.564 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:19:30.608 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [635] ms
+12-Apr-2019 11:19:30.608 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 11:19:30.642 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [34] ms
+12-Apr-2019 11:19:30.642 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 11:19:31.180 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [538] ms
+12-Apr-2019 11:19:31.180 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 11:19:31.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [40] ms
+12-Apr-2019 11:19:31.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 11:19:31.263 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [42] ms
+12-Apr-2019 11:19:31.264 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 11:19:31.302 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [37] ms
+12-Apr-2019 11:19:31.315 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:19:31.325 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:19:31.331 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:19:31.342 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1409 ms
+12-Apr-2019 11:19:31.804 INFO [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:19:32.166 INFO [http-nio-8080-exec-6] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:19:32.168 INFO [http-nio-8080-exec-6] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:22:09.038 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 11:22:09.038 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:22:09.044 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:22:09.049 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:22:09.055 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 11:22:09.068 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 11:22:09.073 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:22:09.074 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:22:09.129 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:22:09.130 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:22:09.131 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:22:09.132 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:23:32.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 11:23:32.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:23:32.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 11:23:32.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 11:23:32.084 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 11:23:32.084 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 11:23:32.084 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 11:23:32.087 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 11:23:32.172 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:23:32.178 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 11:23:32.192 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:23:32.243 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 11:23:32.247 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:23:32.248 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 11:23:32.250 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 516 ms
+12-Apr-2019 11:23:32.272 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 11:23:32.272 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 11:23:32.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 11:23:32.884 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:23:32.915 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [623] ms
+12-Apr-2019 11:23:32.916 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 11:23:32.943 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [27] ms
+12-Apr-2019 11:23:32.943 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 11:23:33.508 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [565] ms
+12-Apr-2019 11:23:33.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 11:23:33.547 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [38] ms
+12-Apr-2019 11:23:33.547 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 11:23:33.590 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [43] ms
+12-Apr-2019 11:23:33.590 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 11:23:33.619 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [29] ms
+12-Apr-2019 11:23:33.630 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:23:33.639 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:23:33.652 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:23:33.662 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1411 ms
+12-Apr-2019 11:31:47.030 INFO [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:31:47.037 WARNING [http-nio-8080-exec-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 11:31:47.445 INFO [http-nio-8080-exec-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:31:47.448 INFO [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:35:21.646 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:35:22.023 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:35:22.025 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:35:42.321 INFO [http-nio-8080-exec-13] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:35:42.446 INFO [http-nio-8080-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:35:42.448 INFO [http-nio-8080-exec-13] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:36:29.280 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:36:29.640 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:36:29.641 INFO [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:37:22.290 INFO [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 11:37:22.293 WARNING [http-nio-8080-exec-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 11:37:22.666 INFO [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 11:37:22.669 INFO [http-nio-8080-exec-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
+12-Apr-2019 11:44:35.014 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-Apr-2019 11:44:35.015 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:44:35.021 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:44:35.028 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:44:35.034 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Apr-2019 11:44:35.069 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Lapkart] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+12-Apr-2019 11:44:35.074 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:44:35.076 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:44:35.129 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 11:44:35.130 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 11:44:35.131 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 11:44:35.131 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 16:18:24.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-20-generic
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b09
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 16:18:24.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/logging.properties
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=8080
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.0/8|::1
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttps.proxyPort=0
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39
+12-Apr-2019 16:18:24.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/temp
+12-Apr-2019 16:18:24.860 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.7.0].
+12-Apr-2019 16:18:24.860 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+12-Apr-2019 16:18:24.860 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Apr-2019 16:18:24.896 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.0g  2 Nov 2017]
+12-Apr-2019 16:18:25.142 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 16:18:25.181 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 16:18:25.199 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 16:18:25.250 INFO [main] org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers The certificate [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.crt] or its private key [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/web/certificates/lapkart_certificate/lapkart.key] could not be processed using a JSSE key manager and will be given directly to OpenSSL
+12-Apr-2019 16:18:25.256 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 16:18:25.258 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+12-Apr-2019 16:18:25.262 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1183 ms
+12-Apr-2019 16:18:25.309 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Apr-2019 16:18:25.309 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+12-Apr-2019 16:18:25.354 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml]
+12-Apr-2019 16:18:26.779 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 16:18:26.846 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/conf/Catalina/localhost/Lapkart.xml] has finished in [1,491] ms
+12-Apr-2019 16:18:26.846 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs]
+12-Apr-2019 16:18:26.932 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/docs] has finished in [85] ms
+12-Apr-2019 16:18:26.932 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples]
+12-Apr-2019 16:18:28.881 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/examples] has finished in [1,949] ms
+12-Apr-2019 16:18:28.881 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager]
+12-Apr-2019 16:18:28.949 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/host-manager] has finished in [67] ms
+12-Apr-2019 16:18:28.949 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager]
+12-Apr-2019 16:18:29.022 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/manager] has finished in [73] ms
+12-Apr-2019 16:18:29.022 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT]
+12-Apr-2019 16:18:29.070 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/media/kils/Kils_Section/kils/code_world/E-Comm/Lapkart/Server/apache-tomcat-8.5.39/webapps/ROOT] has finished in [48] ms
+12-Apr-2019 16:18:29.074 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Apr-2019 16:18:29.089 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-apr-8443"]
+12-Apr-2019 16:18:29.094 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+12-Apr-2019 16:18:29.100 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3837 ms
+12-Apr-2019 16:18:32.336 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] has started
+12-Apr-2019 16:18:32.743 INFO [http-nio-8080-exec-9] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+12-Apr-2019 16:18:32.746 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Lapkart] is completed
