@@ -24,7 +24,7 @@ public class AddToCart extends HttpServlet {
         
         String uid = request.getParameter("userid");
         String token = request.getParameter("token");
-        String pid = request.getParameter("p_id");
+        String pid = request.getParameter("pid");
         int cartid = 1000;
         int quantity = 1;
         
@@ -44,7 +44,7 @@ public class AddToCart extends HttpServlet {
             if(rs.next())
             {
             
-                rs = stmt.executeQuery("select * from users_cart where userid = "+uid+" AND p_id = "+pid);
+                rs = stmt.executeQuery("select * from users_cart where userid = "+uid+" AND pid = "+pid);
                 if(rs.next())
                 {
                     cartid = rs.getInt("cartid");

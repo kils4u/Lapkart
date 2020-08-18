@@ -23,8 +23,6 @@ public class MyOrder extends HttpServlet {
             throws ServletException, IOException {
         PrintWriter out;
         
-        System.out.print("got hit at my orders");
-        
         String token = request.getParameter("token");
         String userid = request.getParameter("userid");
         String op="nodata";
@@ -56,31 +54,31 @@ public class MyOrder extends HttpServlet {
                     op += "\"date\" : \"" + rs.getString("date") + "\",";
                     op += "\"amount\" : \"" + rs.getString("amount") + "\",";
                     op += "\"items\" : [";
-                    r = t.executeQuery("select quantity,p_id,price from product_order where orderid = "+orderid);
+                    r = t.executeQuery("select quantity,pid,amount from product_order where orderid = "+orderid);
                     if(r.next())
                     {
-                        String pid = r.getString("p_id");
-                        p = u.executeQuery("select p_brand, p_model, p_img from product where p_id = "+pid);
+                        String pid = r.getString("pid");
+                        p = u.executeQuery("select pbrand, pmodel, pimg from product where pid = "+pid);
                         if(p.next())
                         {
-                            op += "{ \"p_id\" : \""+pid+"\", ";
+                            op += "{ \"pid\" : \""+pid+"\", ";
                             op += "\"quantity\" : \""+r.getString("quantity")+"\", ";
                             op += "\"price\" : \""+r.getString("price")+"\", ";
-                            op += "\"name\" : \""+p.getString("p_brand") + " " + p.getString("p_model") +"\", ";
-                            op += "\"img\" : \""+p.getString("p_img")+"\" }";
+                            op += "\"name\" : \""+p.getString("pbrand") + " " + p.getString("pmodel") +"\", ";
+                            op += "\"img\" : \""+p.getString("pimg")+"\" }";
                         }
                     }
                     while(r.next())
                     {
-                        String pid = r.getString("p_id");
-                        p = u.executeQuery("select p_brand, p_model, p_img from product where p_id = "+pid);
+                        String pid = r.getString("pid");
+                        p = u.executeQuery("select pbrand, pmodel, pimg from product where pid = "+pid);
                         if(p.next())
                         {
-                            op += ", { \"p_id\" : \""+pid+"\", ";
+                            op += ", { \"pid\" : \""+pid+"\", ";
                             op += "\"quantity\" : \""+r.getString("quantity")+"\", ";
                             op += "\"price\" : \""+r.getString("price")+"\", ";
-                            op += "\"name\" : \""+p.getString("p_brand") + " " + p.getString("p_model") +"\", ";
-                            op += "\"img\" : \""+p.getString("p_img")+"\" }";
+                            op += "\"name\" : \""+p.getString("pbrand") + " " + p.getString("pmodel") +"\", ";
+                            op += "\"img\" : \""+p.getString("pimg")+"\" }";
                         }
                     }
                     op += " ] }";
@@ -93,31 +91,31 @@ public class MyOrder extends HttpServlet {
                     op += "\"date\" : \"" + rs.getString("date") + "\",";
                     op += "\"amount\" : \"" + rs.getString("amount") + "\",";
                     op += "\"items\" : [";
-                    r = t.executeQuery("select quantity,p_id,price from product_order where orderid = "+orderid);
+                    r = t.executeQuery("select quantity,pid,price from product_order where orderid = "+orderid);
                     if(r.next())
                     {
-                        String pid = r.getString("p_id");
-                        p = u.executeQuery("select p_brand, p_model, p_img from product where p_id = "+pid);
+                        String pid = r.getString("pid");
+                        p = u.executeQuery("select pbrand, pmodel, pimg from product where pid = "+pid);
                         if(p.next())
                         {
-                            op += "{ \"p_id\" : \""+pid+"\", ";
+                            op += "{ \"pid\" : \""+pid+"\", ";
                             op += "\"quantity\" : \""+r.getString("quantity")+"\", ";
                             op += "\"price\" : \""+r.getString("price")+"\", ";
-                            op += "\"name\" : \""+p.getString("p_brand") + " " + p.getString("p_model") +"\", ";
-                            op += "\"img\" : \""+p.getString("p_img")+"\" }";
+                            op += "\"name\" : \""+p.getString("pbrand") + " " + p.getString("pmodel") +"\", ";
+                            op += "\"img\" : \""+p.getString("pimg")+"\" }";
                         }
                     }
                     while(r.next())
                     {
-                        String pid = r.getString("p_id");
-                        p = u.executeQuery("select p_brand, p_model, p_img from product where p_id = "+pid);
+                        String pid = r.getString("pid");
+                        p = u.executeQuery("select pbrand, pmodel, pimg from product where pid = "+pid);
                         if(p.next())
                         {
-                            op += ", { \"p_id\" : \""+pid+"\", ";
+                            op += ", { \"pid\" : \""+pid+"\", ";
                             op += "\"quantity\" : \""+r.getString("quantity")+"\", ";
                             op += "\"price\" : \""+r.getString("price")+"\", ";
-                            op += "\"name\" : \""+p.getString("p_brand") + " " + p.getString("p_model") +"\", ";
-                            op += "\"img\" : \""+p.getString("p_img")+"\" }";
+                            op += "\"name\" : \""+p.getString("pbrand") + " " + p.getString("pmodel") +"\", ";
+                            op += "\"img\" : \""+p.getString("pimg")+"\" }";
                         }
                     }
                     op += " ] } ";

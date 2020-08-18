@@ -27,7 +27,7 @@ function signUp()
 {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             get_login_response(this);
         }
     };
@@ -44,7 +44,7 @@ function login()
     
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
         get_login_response(this);
     }
     };
@@ -56,7 +56,7 @@ function login()
 function get_login_response(obj)
 {
     var data = JSON.parse(obj.responseText);
-    if(data.tokens[0].status == "successfull")
+    if(data.tokens[0].status === "successfull")
     {
         var token = data.tokens[0].token;
         var userid = data.tokens[0].userid;
@@ -69,7 +69,7 @@ function get_login_response(obj)
     {
         var ele = document.getElementById("login-feedback");
         ele.setAttribute("class","invalid-feedback d-block");
-        ele.innerHTML = "Invalid Email or Password"
+        ele.innerHTML = "Invalid Email or Password";
     }
 }
 

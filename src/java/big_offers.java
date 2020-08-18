@@ -42,7 +42,8 @@ public class big_offers extends HttpServlet {
                     output += ", { \"off_id\" : \"" + rs.getString("off_id") + "\", ";
                     output += "\"off_img_link\" : \"" + rs.getString("off_img_link") + "\"} ";
                 }
-                output += "] }";
+                if(output != null)
+                    output += "] }";
                 stmt.close();
                 c.close();
             }

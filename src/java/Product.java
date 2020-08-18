@@ -25,7 +25,7 @@ public class Product extends HttpServlet {
         Connection c,d;
         Statement stmt;
         ResultSet rs,r;
-        String pid = request.getParameter("p_id");
+        String pid = request.getParameter("pid");
         String op = null;
         
         try {
@@ -34,13 +34,13 @@ public class Product extends HttpServlet {
             d = DriverManager.getConnection("jdbc:postgresql://localhost:5432/lapkart","postgres", "kils4u");
             stmt = c.createStatement();
             Statement stmt2 = d.createStatement();
-            rs = stmt.executeQuery("select * from product_spec where p_id = " + pid);
+            rs = stmt.executeQuery("select * from product_spec where pid = " + pid);
             if(rs.next())
             {
                 op = "{ \"product\" : [{";
-                op += "\"p_id\" : \""+rs.getString("p_id")+"\",";
-                op += "\"b_name\" : \""+rs.getString("b_name")+"\",";
-                op += "\"m_name\" : \""+rs.getString("m_name")+"\",";
+                op += "\"pid\" : \""+rs.getString("pid")+"\",";
+                op += "\"bname\" : \""+rs.getString("bname")+"\",";
+                op += "\"mname\" : \""+rs.getString("mname")+"\",";
                 op += "\"color\" : \""+rs.getString("color")+"\",";
                 op += "\"weight\" : \""+rs.getString("weight")+"\",";
                 op += "\"processor\" : \""+rs.getString("processor")+"\",";
@@ -48,18 +48,18 @@ public class Product extends HttpServlet {
                 op += "\"processor_speed\" : \""+rs.getString("processor_speed")+"\",";
                 op += "\"ram\" : \""+rs.getString("ram")+"\",";
                 op += "\"ram_size\" : \""+rs.getString("ram_size")+"\",";
-                op += "\"graphics\" : \""+rs.getString("g_card")+"\",";
-                op += "\"graphics_size\" : \""+rs.getString("g_size")+"\",";
+                op += "\"graphics\" : \""+rs.getString("graphics_card")+"\",";
+                op += "\"graphics_size\" : \""+rs.getString("graphics_size")+"\",";
                 op += "\"ssd\" : \""+rs.getString("ssd")+"\",";
                 op += "\"hdd\" : \""+rs.getString("hhd")+"\",";
                 op += "\"display\" : \""+rs.getString("disp")+"\",";
                 op += "\"disp_size\" : \""+rs.getString("disp_size")+"\",";
                 op += "\"scr_res\" : \""+rs.getString("scr_res")+"\",";
-                r = stmt2.executeQuery("select * from product where p_id = " + pid);
+                r = stmt2.executeQuery("select * from product where pid = " + pid);
                 if(r.next())
                 {
-                    op += "\"price\" : \""+r.getString("p_price")+"\",";
-                    op += "\"img\" : \""+r.getString("p_img")+"\"}]}";
+                    op += "\"price\" : \""+r.getString("pprice")+"\",";
+                    op += "\"img\" : \""+r.getString("pimg")+"\"}]}";
                 }
             }
             

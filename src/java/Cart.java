@@ -50,15 +50,15 @@ public class Cart extends HttpServlet {
                         op = "{\"items\" : [ { ";
                         op += " \"cartid\" : \""+rs.getString("cartid")+"\", ";
                         op += " \"userid\" : \""+rs.getString("userid")+"\", ";
-                        op += " \"p_id\" : \""+rs.getString("p_id")+"\", ";
+                        op += " \"pid\" : \""+rs.getString("pid")+"\", ";
                         op += " \"quantity\" : \""+rs.getString("quantity")+"\" ";
                         
-                        rs2 = stmt2.executeQuery("select p_id, p_brand, p_model, p_img, p_price from product where p_id = "+rs.getString("p_id"));
+                        rs2 = stmt2.executeQuery("select pid, pbrand, pmodel, pimg, pprice from product where pid = "+rs.getString("pid"));
                         if(rs2.next())
                         {
-                            op += ", \"name\" : \"" + rs2.getString("p_brand") + " " + rs2.getString("p_model") + "\", ";
-                            op += " \"img\" : \"" +rs2.getString("p_img")+"\", ";
-                            op += " \"price\" : \""+rs2.getString("p_price")+"\"";
+                            op += ", \"name\" : \"" + rs2.getString("pbrand") + " " + rs2.getString("pmodel") + "\", ";
+                            op += " \"img\" : \"" +rs2.getString("pimg")+"\", ";
+                            op += " \"price\" : \""+rs2.getString("pprice")+"\"";
                         }
                         op += "}";
                         rs2.close();
@@ -69,21 +69,21 @@ public class Cart extends HttpServlet {
                         op += ",{ ";
                         op += " \"cartid\" : \""+rs.getString("cartid")+"\", ";
                         op += " \"userid\" : \""+rs.getString("userid")+"\", ";
-                        op += " \"p_id\" : \""+rs.getString("p_id")+"\", ";
+                        op += " \"pid\" : \""+rs.getString("pid")+"\", ";
                         op += " \"quantity\" : \""+rs.getString("quantity")+"\" ";
                         
-                        rs2 = stmt2.executeQuery("select p_id, p_brand, p_model, p_img, p_price from product where p_id = "+rs.getString("p_id"));
+                        rs2 = stmt2.executeQuery("select pid, pbrand, pmodel, pimg, pprice from product where pid = "+rs.getString("pid"));
                         if(rs2.next())
                         {
-                            op += ", \"name\" : \"" + rs2.getString("p_brand") + " " + rs2.getString("p_model") + "\", ";
-                            op += " \"img\" : \""+rs2.getString("p_img")+"\", ";
-                            op += " \"price\" : \""+rs2.getString("p_price")+"\"";
+                            op += ", \"name\" : \"" + rs2.getString("pbrand") + " " + rs2.getString("pmodel") + "\", ";
+                            op += " \"img\" : \""+rs2.getString("pimg")+"\", ";
+                            op += " \"price\" : \""+rs2.getString("pprice")+"\"";
                         }
                         op += "}";
                         rs2.close();
                     }
-                    
-                    op += "]}";
+                    if(op.compareTo("noData") != 0)
+                        op += "]}";
                     rs.close();
                 }
                 

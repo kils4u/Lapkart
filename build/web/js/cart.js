@@ -5,13 +5,13 @@ var Total_Price = 0;
 function Load_cart()
 {
     var token = localStorage.getItem("token");
-    if(token != null)
+    if(token !== null)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var resp = this.responseText;
-            if(resp != "noData" && resp != null)
+            if(resp !== "noData" && resp !== null)
             {
                 get_items(resp);
             }
@@ -40,7 +40,7 @@ function get_items(response)
         for(i=0;i<len;i++)
         {
             ele.appendChild(create_item(cart.items[i]));
-            price_tag.appendChild(createPriceTag(cart.items[i], i+1))
+            price_tag.appendChild(createPriceTag(cart.items[i], i+1));
         }
         var tot_li = document.createElement("li");
         tot_li.setAttribute("class","list-group-item");
@@ -48,8 +48,8 @@ function get_items(response)
         var tot_sp1 = document.createElement("span");
         tot_sp1.innerHTML = "Total Price : ";
         var tot_sp2 = document.createElement("span");
-        tot_sp2.setAttribute("class","float-right")
-        tot_sp2.innerHTML = window.Total_Price;
+        tot_sp2.setAttribute("class","float-right");
+        tot_sp2.innerHTML = "₹" + window.Total_Price;
         tot_p.appendChild(tot_sp1);
         tot_p.appendChild(tot_sp2);
         tot_li.appendChild(tot_p);
@@ -70,7 +70,7 @@ function create_item(item)
     
     var div_col_1 = document.createElement("div");
     div_col_1.setAttribute("class","col-md-4");
-    div_col_1.setAttribute("data-value",item.p_id);
+    div_col_1.setAttribute("data-value",item.pid);
     div_col_1.setAttribute("onclick","open_item(this.getAttribute('data-value'))");
     
     var img = document.createElement("img");
@@ -85,7 +85,7 @@ function create_item(item)
     var h4 = document.createElement("h4");
     h4.setAttribute("id",item.name+"-name");
     h4.setAttribute("class","mb-4");
-    h4.setAttribute("data-value",item.p_id);
+    h4.setAttribute("data-value",item.pid);
     h4.setAttribute("onclick","open_item(this.getAttribute('data-value'))");
     h4.innerHTML = item.name;
     
@@ -95,8 +95,8 @@ function create_item(item)
     
     var sub = document.createElement("button");
     sub.setAttribute("type","button");
-    sub.setAttribute("data-value",item.cartid)
-    sub.setAttribute("id",item.cartid + "-sub")
+    sub.setAttribute("data-value",item.cartid);
+    sub.setAttribute("id",item.cartid + "-sub");
     sub.setAttribute("class","btn btn-primary btn-sm ml-1");
     sub.setAttribute("onclick","sub_item(this.getAttribute('data-value'))");
     sub.innerHTML="-";
@@ -106,8 +106,8 @@ function create_item(item)
         sub.disabled = false;
     
     var input = document.createElement("input");
-    input.setAttribute("id",item.cartid + "-input")
-    input.setAttribute("data-value",item.cartid)
+    input.setAttribute("id",item.cartid + "-input");
+    input.setAttribute("data-value",item.cartid);
     input.setAttribute("size","1");
     input.setAttribute("class","m-1");
     input.setAttribute("type","text");
@@ -115,22 +115,22 @@ function create_item(item)
     input.value = item.quantity;
     
     var add = document.createElement("button");
-    add.setAttribute("id",item.cartid + "-add")
+    add.setAttribute("id",item.cartid + "-add");
     add.setAttribute("type","button");
-    add.setAttribute("data-value",item.cartid)
+    add.setAttribute("data-value",item.cartid);
     add.setAttribute("class","btn btn-primary btn-sm");
     add.setAttribute("onclick","add_item(this.getAttribute('data-value'))");
     add.innerHTML="+";
     
     h6.appendChild(sub);
-    h6.appendChild(input)
-    h6.appendChild(add)
+    h6.appendChild(input);
+    h6.appendChild(add);
     
     var h5 = document.createElement("h5");
     h5.innerHTML = "Price : " + item.price;
     
     var remove = document.createElement("button");
-    remove.setAttribute("data-value",item.cartid)
+    remove.setAttribute("data-value",item.cartid);
     remove.setAttribute("type","button");
     remove.setAttribute("data-toggle","modal");
     remove.setAttribute("data-target","#RemoveItem");
@@ -158,7 +158,7 @@ function createPriceTag(item, n)
     var item_sp1 = document.createElement("span");
     item_sp1.innerHTML = "Item No";
     var item_sp2 = document.createElement("span");
-    item_sp2.setAttribute("class","float-right")
+    item_sp2.setAttribute("class","float-right");
     item_sp2.innerHTML = n;
     item_no.appendChild(item_sp1);
     item_no.appendChild(item_sp2);
@@ -166,13 +166,13 @@ function createPriceTag(item, n)
     var price_sp1 = document.createElement("span");
     price_sp1.innerHTML = "Price";
     var price_sp2 = document.createElement("span");
-    price_sp2.setAttribute("class","float-right")
+    price_sp2.setAttribute("class","float-right");
     price_sp2.innerHTML = item.price + "&nbsp * &nbsp" + item.quantity ;
     price.appendChild(price_sp1);
     price.appendChild(price_sp2);
     list.appendChild(item_no);
     list.appendChild(price);
-    window.Total_Price += item.price * item.quantity;
+    window.Total_Price += Number(item.price.replace(/[^0-9\.]+/g,"")) * item.quantity;
     return list;
 }
 
@@ -185,11 +185,11 @@ function add_item(cartid)
 {
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
-    if(token != null && userid != null)
+    if(token !== null && userid !== null)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             location.reload();
         }
         };
@@ -208,11 +208,11 @@ function sub_item(cartid)
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
     var value = document.getElementById(cartid+"-input").value;
-    if((token != null && userid != null) && value > 1)
+    if((token !== null && userid !== null) && value > 1)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             location.reload();
         }
         };
@@ -231,11 +231,11 @@ function remove_item()
     var cartid = window.RemoveCart;
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
-    if(token != null && userid != null)
+    if(token !== null && userid !== null)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             location.reload();
         }
         };
@@ -255,11 +255,11 @@ function input_change(ele)
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
     var value = document.getElementById(cartid+"-input").value;
-    if((token != null && userid != null) && value > 0)
+    if((token !== null && userid !== null) && value > 0)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             location.reload();
         }
         };

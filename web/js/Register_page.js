@@ -72,7 +72,7 @@ function verify(check)
             ele.disabled = true;
             check.checked = false;
         }
-        else if(country == "")
+        else if(country === "")
         {
             alert("select country");
             var ele = document.getElementById("submit");
@@ -95,7 +95,7 @@ function verify(check)
         }
         else if(!email_verified)
         {
-            alert("verify Email")
+            alert("verify Email");
             var ele = document.getElementById("submit");
             ele.disabled = true;
             check.checked = false;
@@ -123,9 +123,9 @@ function submit_form()
 {
         var xhttp = new XMLHttpRequest();
   	xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var msg = this.responseText;
-            if(msg == "successful")
+            if(msg === "successful")
             {
                 window.open("/Lapkart/login.html","_self");
             }
@@ -147,7 +147,7 @@ function validate_name(name,ele)
     }
     for(i=0;i<len;i++)
     {
-        if (!((name.charCodeAt(i) >= 65 && name.charCodeAt(i) <= 90) ||(name.charCodeAt(i) >= 97 && name.charCodeAt(i) <= 122) || name.charCodeAt(i) == 46))
+        if (!((name.charCodeAt(i) >= 65 && name.charCodeAt(i) <= 90) ||(name.charCodeAt(i) >= 97 && name.charCodeAt(i) <= 122) || name.charCodeAt(i) === 46))
         {
             ele.setAttribute("class","invalid-feedback d-block");
             ele.innerHTML =  "Enter valid name";
@@ -162,7 +162,7 @@ function validate_name(name,ele)
 function validate_age(age,ele)
 {
     len = age.length;
-    if(len == 0)
+    if(len === 0)
     {
         ele.setAttribute("class","invalid-feedback d-block");
         ele.innerHTML =  "Enter valid age";
@@ -181,12 +181,12 @@ function validate_age(age,ele)
     {
         ele.setAttribute("class","invalid-feedback d-block");
         ele.innerHTML =  "Enter Age between 10 - 120";
-        return false
+        return false;
     }
     else
     {
         ele.setAttribute("class","invalid-feedback");
-        ele.innerHTML =  ""
+        ele.innerHTML =  "";
         return true;
     }
 }
@@ -198,7 +198,7 @@ function check_mob(mob,ele)
         {
             ele.setAttribute("class","invalid-feedback d-block");
             ele.innerHTML =  "mobile no must have 12 characters including country code";
-            return false
+            return false;
         }
         else
         {
@@ -212,7 +212,7 @@ function check_mob(mob,ele)
                     return false;
                 }
             }
-            if(i == len)
+            if(i === len)
             {
                 ele.setAttribute("class","invalid-feedback");
                 ele.innerHTML = "";
@@ -247,11 +247,11 @@ function pass_check(pass,ele)
 			schar++;
 	}
 
-	if(cap == 0 || small == 0 || digit == 0 || schar == 0)
+	if(cap === 0 || small === 0 || digit === 0 || schar === 0)
         {
 		ele.setAttribute("class","invalid-feedback d-block");
                 ele.innerHTML = "Password must have atlst : 1 small letter, 1 capital letter, 1 special char, and 1 digit";
-                return false
+                return false;
         }
 	else
         {
@@ -277,12 +277,12 @@ function add_country()
 function add_state()
 {
     var c = document.getElementById("country").value;
-    if(c == "")
+    if(c === "")
     {
         var feed = document.getElementById("country-feedback");
         feed.setAttribute("class","invalid-feedback d-block");
         feed.innerHTML = "Select valid Country";
-        return false
+        return false;
     }
     else
     {
@@ -305,12 +305,12 @@ function add_state()
 function check_state()
 {
     var val = document.getElementById("state").value;
-    if(val == "")
+    if(val === "")
     {
         var feed = document.getElementById("state-feedback");
         feed.setAttribute("class","invalid-feedback d-block");
         feed.innerHTML = "Select valid Seate";
-        return false
+        return false;
     }
     else
     {
@@ -326,7 +326,7 @@ function pass_match(pass2,ele)
         var pass1 = document.getElementById("pass1").value;
 	var len = pass1.length;
 
-	if(len != pass2.length)
+	if(len !== pass2.length)
         {
             ele.setAttribute("class","invalid-feedback d-block");
             ele.innerHTML = "Password Do not match";
@@ -335,7 +335,7 @@ function pass_match(pass2,ele)
 
 	for(i=0;i<len;i++)
 	{
-		if(pass1.charAt(i) != pass2.charAt(i))
+		if(pass1.charAt(i) !== pass2.charAt(i))
                 {
                     ele.setAttribute("class","invalid-feedback d-block");
                     ele.innerHTML = "password do not match";
@@ -388,7 +388,7 @@ function check_zip()
 function check_email(mail,ele)
 {
         window.email_verified = false;
-	if(mail.indexOf(".com") != (mail.length - 4) || mail.indexOf(".com") <= 0)
+	if(mail.indexOf(".com") !== (mail.length - 4) || mail.indexOf(".com") <= 0)
         {
             ele.setAttribute("class","invalid-feedback d-block");
             ele.innerHTML ="email must have \".com\" at the end";
@@ -400,7 +400,7 @@ function check_email(mail,ele)
             ele.innerHTML ="email must have '@' symbol";
             return false;
         }
-        else if(mail.indexOf("@") == mail.indexOf(".com") - 1)
+        else if(mail.indexOf("@") === mail.indexOf(".com") - 1)
         {
             ele.setAttribute("class","invalid-feedback d-block");
             ele.innerHTML ="Envalid Domain";
@@ -412,16 +412,16 @@ function check_email(mail,ele)
                 var isExist;
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
+                if (this.readyState === 4 && this.status === 200) {
                     isExist = this.responseText;
-                     if(isExist == "notExist")
+                     if(isExist === "notExist")
                     {
                         ele.setAttribute("class","invalid-feedback");
                         ele.innerHTML = "";
                         window.email_verified = true;
                         resolve(true);
                     }
-                    else if(isExist == "Exist")
+                    else if(isExist === "Exist")
                     {
                         ele.setAttribute("class","invalid-feedback d-block");
                         ele.innerHTML = "Email already taken";

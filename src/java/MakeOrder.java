@@ -8,8 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,9 +34,7 @@ public class MakeOrder extends HttpServlet {
         
         int orderid;
         
-        int Total_amount = 0;
-        
-        //System.out.print("got hit at make order");        
+        float Total_amount = 0;
         Connection c,d;
         Statement s,t;
         ResultSet rs,r;
@@ -61,24 +57,23 @@ public class MakeOrder extends HttpServlet {
                     if(rs.next())
                     {
                         orderid = rs.getInt("max");
-                        if(orderid < 1000)
-                            orderid = 1000;
+                        if(orderid < 2000)
+                            orderid = 2000;
                         else
                             orderid++;
                         date = new Date();
-                        System.out.print("date = "+formatter.format(date));
                         s.executeUpdate("insert into users_order values ("+orderid+", "+userid+","+addrid+","+mobid+",'pending','"+formatter.format(date)+"')");
                         
                         rs = s.executeQuery("select * from users_cart where userid = "+userid);
                         while(rs.next())
                         {
-                            r = t.executeQuery("select p_price from product where p_id = "+rs.getString("p_id"));
+                            r = t.executeQuery("select pprice from product where pid = "+rs.getString("pid"));
                             if(r.next())
                             {
                                 int q = Integer.valueOf(rs.getString("quantity"));
-                                int p = Integer.valueOf(r.getString("p_price"));
+                                float p = Float.valueOf(r.getString("pprice").replace("₹", "").replace(",", ""));
                                 Total_amount += p * q;
-                                t.executeUpdate("insert into product_order values ("+orderid+","+rs.getString("p_id")+","+q+","+p+")");
+                                t.executeUpdate("insert into product_order values ("+orderid+","+rs.getString("pid")+","+q+","+p+")");
                             }
                             r.close();
                         }

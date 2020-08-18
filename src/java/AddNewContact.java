@@ -25,13 +25,8 @@ public class AddNewContact extends HttpServlet {
         String token = request.getParameter("token");
         String userid = request.getParameter("userid");
         String mob = request.getParameter("mob");
-        
         int mobid;
-        
-        System.out.print("mob = "+mob);
-        
         String op="";
-        
         Connection c;
         Statement s;
         ResultSet rs = null;
@@ -53,7 +48,7 @@ public class AddNewContact extends HttpServlet {
                             mobid = 100;
                         else
                             mobid++;
-                        s.executeUpdate("insert into users_mob values ("+mobid+", "+userid+","+mob+")");
+                        s.executeUpdate("insert into users_mob values ("+mobid+", "+userid+",'"+mob+"')");
                         op = "successful";
                     }
                 }

@@ -7,8 +7,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.TreeMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -28,8 +26,8 @@ public class Payment extends HttpServlet {
         public final static String INDUSTRY_TYPE_ID="Retail";
         public final static String CHANNEL_ID="WEB";
         public final static String WEBSITE="WEBSTAGING";
-        public final static String PAYTM_URL="https://securegw-stage.paytm.in/theia/processTransaction";
-        public final static String callback_url = "https://lapkart:8443/Lapkart/PaymentRedirect";
+        public final static String PAYTM_URL="https://securegw-stage.paytm.in/order/process";
+        public final static String callback_url = "https://localhost:8443/Lapkart/PaymentRedirect";
     }
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -41,7 +39,6 @@ public class Payment extends HttpServlet {
         String mob = null;
         String email = null;
         String mobid;
-        String addrid;
         
         String op = "fail";
         
@@ -104,7 +101,6 @@ public class Payment extends HttpServlet {
         } catch (SQLException ex) {
             Logger.getLogger(AddNewAddress.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             

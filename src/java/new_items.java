@@ -1,4 +1,4 @@
-
+    
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,7 +16,7 @@ import java.util.logging.Logger;
 @WebServlet(urlPatterns = {"/new_items"})
 public class new_items extends HttpServlet {
     
-    String query = "select * from product where p_id IN (select product_id from new_item)";
+    String query = "select * from product where pid IN (select product_id from new_item)";
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -32,29 +31,30 @@ public class new_items extends HttpServlet {
             if(rs.next())
             {
                 output = "{ \"new_item\" : [ ";
-                 output += "{ \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                output += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                output += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                output += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                output += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                output += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                output += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                output += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                output += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                 output += "{ \"pid\" : \"" + rs.getString("pid") + "\",";
+                output += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                output += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                output += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                output += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                output += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                output += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                output += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                output += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
              }
             while(rs.next())
             {
-                output += ", { \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                output += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                output += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                output += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                output += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                output += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                output += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                output += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                output += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                output += ", { \"pid\" : \"" + rs.getString("pid") + "\",";
+                output += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                output += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                output += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                output += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                output += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                output += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                output += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                output += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
             }
-            output += "] }";
+            if(output != null)
+                output += "] }";
             response.setContentType("application/json;charset=UTF-8");
             PrintWriter out = response.getWriter();
             out.println(output);
