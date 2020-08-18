@@ -1,5 +1,4 @@
 
-import java.io.Console;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -35,8 +34,6 @@ public class GetPersonal extends HttpServlet {
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/lapkart","postgres", "kils4u");
             s = c.createStatement();
             
-            System.out.print("select userid from users_token where token = "+token+" AND userid = "+userid);
-            
             rs = s.executeQuery("select userid from users_token where token = "+token+" AND userid = "+userid );
             if(rs.next())
             {
@@ -66,12 +63,12 @@ public class GetPersonal extends HttpServlet {
                             op += "\"mob\" : \""+rs.getString("mob")+"\" ";
                             op += "}";
                         }
-                        op += "], ";
+                        op += "]";
                     }
                     rs = s.executeQuery("select * from users_addr where userid = "+userid);
                     if(rs.next())
                     {
-                        op += "\"address\" : [ { ";
+                        op += ", \"address\" : [ { ";
                         op += "\"addrid\" : \"" + rs.getString("addrid") + "\", ";
                         op += "\"addr1\" : \"" + rs.getString("addr1") + "\", ";
                         op += "\"addr2\" : \"" + rs.getString("addr2") + "\", ";
@@ -98,7 +95,6 @@ public class GetPersonal extends HttpServlet {
             }
             else
             {
-                System.out.print("token = "+token);
                 op = "Invalid_user";
             }
             

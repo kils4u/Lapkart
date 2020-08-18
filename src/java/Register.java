@@ -30,7 +30,7 @@ public class Register extends HttpServlet {
         
         String fname = request.getParameter("fname");
         String lname = request.getParameter("lname");
-        String gender = request.getParameter("fname");
+        String gender = request.getParameter("gender");
         String age = request.getParameter("age");
         String mob = request.getParameter("mob");
         String email = request.getParameter("email");

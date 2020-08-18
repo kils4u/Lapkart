@@ -29,9 +29,9 @@ public class Search extends HttpServlet {
         
         String b_name = null;
         String processor = null;
-        String m_name = null;
+        String mname = null;
         String processor_gen = null;
-        String p_id = null;
+        String pname = null;
         List pids = new ArrayList();
         
         String op = null;
@@ -45,10 +45,10 @@ public class Search extends HttpServlet {
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/lapkart","postgres", "kils4u");
             s = c.createStatement();
             
-            rs = s.executeQuery("select b_name from product_spec");
+            rs = s.executeQuery("select bname from product_spec");
             while(rs.next())
             {
-                String brand = rs.getString("b_name").toLowerCase().trim();
+                String brand = rs.getString("bname").toLowerCase().trim();
                 int indx = search.indexOf(brand);
                 if(indx != -1)
                 {
@@ -60,7 +60,7 @@ public class Search extends HttpServlet {
             if(search != null){
                 if(b_name != null)
                 {
-                    rs = s.executeQuery("select processor from product_spec where LOWER(b_name) = '"+b_name+"'");
+                    rs = s.executeQuery("select processor from product_spec where LOWER(bname) = '"+b_name+"'");
                 }
                 else
                 {
@@ -82,11 +82,11 @@ public class Search extends HttpServlet {
             {
                 if(b_name != null && processor != null)
                 {
-                    rs = s.executeQuery("select processor_gen from product_spec where LOWER(b_name) = '"+b_name + "' AND LOWER(processor) = '"+processor+"'");
+                    rs = s.executeQuery("select processor_gen from product_spec where LOWER(bname) = '"+b_name + "' AND LOWER(processor) = '"+processor+"'");
                 }
                 else if(b_name != null)
                 {
-                    rs = s.executeQuery("select processor_gen from product_spec where LOWER(b_name) = '"+b_name+"'");
+                    rs = s.executeQuery("select processor_gen from product_spec where LOWER(bname) = '"+b_name+"'");
                 }
                 else if(processor != null)
                 {
@@ -112,53 +112,51 @@ public class Search extends HttpServlet {
             {
                if(b_name != null && processor != null && processor_gen != null )
                {
-                   rs = s.executeQuery("select m_name,p_id from product_spec where LOWER(b_name) = '"+b_name+"' AND LOWER(processor) = '"+processor +"' AND LOWER(processor_gen) = '"+ processor_gen+"'");
+                   rs = s.executeQuery("select mname,pid from product_spec where LOWER(bname) = '"+b_name+"' AND LOWER(processor) = '"+processor +"' AND LOWER(processor_gen) = '"+ processor_gen+"'");
                }
                else if(b_name != null && processor != null)
                {
-                   rs = s.executeQuery("select m_name,p_id from product_spec where LOWER(b_name) = '"+b_name+ "' AND LOWER(processor) = '"+processor+"'");
+                   rs = s.executeQuery("select mname,pid from product_spec where LOWER(bname) = '"+b_name+ "' AND LOWER(processor) = '"+processor+"'");
                }
                else if(processor != null && processor_gen != null)
                {
-                   rs = s.executeQuery("select m_name,p_id from product_spec where LOWER(processor) = '"+processor+ "' AND LOWER(processor_gen) = '"+ processor_gen+"'");
+                   rs = s.executeQuery("select mname,pid from product_spec where LOWER(processor) = '"+processor+ "' AND LOWER(processor_gen) = '"+ processor_gen+"'");
                }
                else if(b_name != null)
                {
-                   rs = s.executeQuery("select m_name,p_id from product_spec where LOWER(b_name) = '"+b_name+"'");
+                   rs = s.executeQuery("select mname,pid from product_spec where LOWER(bname) = '"+b_name+"'");
                }
                else if(processor != null)
                {
-                   rs = s.executeQuery("select m_name,p_id from product_spec where LOWER(processor) = '"+processor+"'");                   
+                   rs = s.executeQuery("select mname,pid from productspec where LOWER(processor) = '"+processor+"'");                   
                }
                else
                {
-                   rs = s.executeQuery("select m_name,p_id from product_spec");
+                   rs = s.executeQuery("select mname,pid from product_spec");
                }
                while(rs.next())
                {
-                   String model = rs.getString("m_name").toLowerCase();
+                   String model = rs.getString("mname").toLowerCase();
                    if(model.length() == search.length() )
                    {
                        if(search.compareTo(model)==0)
                        {
-                           p_id = rs.getString("p_id");
+                           pname = rs.getString("mname");
                            break;
                        }
                    }
                    else if(model.length() > search.length())
                    {
-                       if(model.indexOf(search) != -1)
+                       if(model.contains(search))
                        {
-                           pids.add(new String(rs.getString("p_id")));
-                           continue;
+                           pids.add(rs.getString("mname"));
                        }
                    }
                    else if(model.length() < search.length())
                    {
-                       if(search.indexOf(model) != -1)
+                       if(search.contains(model))
                        {
-                           pids.add(new String(rs.getString("p_id")));
-                           continue;
+                           pids.add(rs.getString("mname"));
                        }
                    }
                    else
@@ -167,9 +165,9 @@ public class Search extends HttpServlet {
                         int len = search_items.length;
                         for(int i=0;i<len;i++)
                         {
-                            if(model.indexOf(search_items[i]) != -1)
+                            if(model.contains(search_items[i]))
                             {
-                                pids.add(new String(rs.getString("p_id")));
+                                pids.add(rs.getString("bname"));
                                 break;
                             }
                         }
@@ -178,21 +176,21 @@ public class Search extends HttpServlet {
                }
             }
             
-            if(p_id != null)
+            if(pname != null)
             {
                 op = "{ \"Items\" : [ ";
-                rs = s.executeQuery("select * from product where p_id = "+p_id);
+                rs = s.executeQuery("select * from product where pbrand = "+pname);
                 if(rs.next())
                 {
-                    op += "{ \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                    op += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                    op += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                    op += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                    op += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                    op += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                    op += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                    op += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                    op += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                    op += "{ \"pid\" : \"" + rs.getString("pid") + "\",";
+                    op += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                    op += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                    op += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                    op += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                    op += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                    op += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                    op += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                    op += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
                 }
             }
             
@@ -205,18 +203,18 @@ public class Search extends HttpServlet {
                     op = "{ \"Items\" : [ ";
                 for(int i=0;i<len;i++)
                 {
-                    rs = s.executeQuery("select * from product where p_id = "+pids.get(i));
+                    rs = s.executeQuery("select * from product where pmodel = '"+pids.get(i)+"'");
                     if(rs.next())
                     {
-                        op += "{ \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                        op += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                        op += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                        op += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                        op += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                        op += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                        op += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                        op += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                        op += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                        op += "{ \"pid\" : \"" + rs.getString("pid") + "\",";
+                        op += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                        op += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                        op += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                        op += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                        op += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                        op += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                        op += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                        op += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
                     }
                     if(i!=len-1)
                         op += ", ";
@@ -228,30 +226,30 @@ public class Search extends HttpServlet {
                     op += ", ";
                 else
                     op = "{ \"Items\" : [ ";
-                rs = s.executeQuery("select * from product where p_id IN (select p_id from product_spec where LOWER(processor) = '"+ processor +"' )");
+                rs = s.executeQuery("select * from product where pbrand IN (select pname from product_spec where LOWER(processor) = '"+ processor +"' )");
                 if(rs.next())
                 {
-                    op += "{ \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                    op += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                    op += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                    op += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                    op += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                    op += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                    op += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                    op += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                    op += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                    op += "{ \"pid\" : \"" + rs.getString("pid") + "\",";
+                    op += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                    op += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                    op += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                    op += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                    op += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                    op += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                    op += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                    op += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
                 }
                 while(rs.next())
                 {
-                    op += ", { \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                    op += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                    op += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                    op += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                    op += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                    op += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                    op += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                    op += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                    op += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                    op += ", { \"pid\" : \"" + rs.getString("pid") + "\",";
+                    op += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                    op += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                    op += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                    op += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                    op += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                    op += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                    op += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                    op += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
                 }
             }
             else if(b_name != null)
@@ -260,38 +258,39 @@ public class Search extends HttpServlet {
                     op += ", ";
                 else
                     op = "{ \"Items\" : [ ";
-                rs = s.executeQuery("select * from product where LOWER(p_brand) = '"+b_name+"'");
+                rs = s.executeQuery("select * from product where LOWER(pbrand) = '"+b_name+"'");
                 if(rs.next())
                 {
-                    op += "{ \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                    op += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                    op += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                    op += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                    op += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                    op += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                    op += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                    op += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                    op += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                    op += "{ \"pid\" : \"" + rs.getString("pid") + "\",";
+                    op += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                    op += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                    op += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                    op += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                    op += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                    op += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                    op += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                    op += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
                 }
                 while(rs.next())
                 {
-                    op += ", { \"p_id\" : \"" + rs.getString("p_id") + "\",";
-                    op += "\"p_name\" : \"" + rs.getString("p_brand") + "\",";
-                    op += "\"p_model\" : \"" + rs.getString("p_model") + "\",";
-                    op += "\"p_img_link\" : \"" + rs.getString("p_img") + "\",";
-                    op += "\"p_price\" : \"" + rs.getString("p_price") + "\",";
-                    op += "\"p_processor\" : \"" + rs.getString("p_processor") + "\",";
-                    op += "\"p_hdd_size\" : \"" + rs.getString("p_hdd") + "\",";
-                    op += "\"p_ram_size\" : \"" + rs.getString("p_ram") + "\",";
-                    op += "\"p_graphics_size\" : \"" + rs.getString("p_graphics") + "\"}";
+                    op += ", { \"pid\" : \"" + rs.getString("pid") + "\",";
+                    op += "\"pbrand\" : \"" + rs.getString("pbrand") + "\",";
+                    op += "\"pmodel\" : \"" + rs.getString("pmodel") + "\",";
+                    op += "\"pimg_link\" : \"" + rs.getString("pimg") + "\",";
+                    op += "\"pprice\" : \"" + rs.getString("pprice") + "\",";
+                    op += "\"pprocessor\" : \"" + rs.getString("pprocessor") + "\",";
+                    op += "\"phdd_size\" : \"" + rs.getString("phdd") + "\",";
+                    op += "\"pram_size\" : \"" + rs.getString("pram") + "\",";
+                    op += "\"pgraphics_size\" : \"" + rs.getString("pgraphics") + "\"}";
                 }
             }
             else
             {
                 op = "No_Result";
             }
-            if(op != "No_Result")
-                    op += "] }";
+            if(op.compareTo("No_Result") != 0) {
+                op += "] }";
+            }
             response.setContentType("application/json;charset=UTF-8");
             PrintWriter out = response.getWriter();
             out.print(op);

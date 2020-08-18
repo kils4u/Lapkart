@@ -5,7 +5,7 @@ function getPID()
     var url = window.location.href;
     var start = url.indexOf("pid=") + 4;
     var end = url.length;
-    if(start != 3)
+    if(start !== 3)
     {
         var id = url.substring(start,end);
         var len = id.length;
@@ -27,10 +27,10 @@ function getProduct()
 {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
         var data = JSON.parse(this.responseText);
-        document.getElementById("brand_name").innerHTML = data.product[0].b_name;
-        document.getElementById("Model_name").innerHTML = data.product[0].m_name;
+        document.getElementById("brand_name").innerHTML = data.product[0].bname;
+        document.getElementById("Model_name").innerHTML = data.product[0].mname;
         document.getElementById("color").innerHTML = data.product[0].color;
         document.getElementById("weight").innerHTML = data.product[0].weight;
         document.getElementById("procrssor_brand").innerHTML = data.product[0].processor;
@@ -45,7 +45,7 @@ function getProduct()
         document.getElementById("display").innerHTML = data.product[0].display;
         document.getElementById("display_size").innerHTML = data.product[0].disp_size;
         document.getElementById("scr_res").innerHTML = data.product[0].scr_res;
-        document.getElementById("product_name").innerHTML = data.product[0].b_name + " " + data.product[0].m_name;
+        document.getElementById("product_name").innerHTML = data.product[0].bname + " " + data.product[0].mname;
         document.getElementById("price").innerHTML = data.product[0].price;
         var ele = document.getElementById("img");
         ele.setAttribute("src","Images/product/"+data.product[0].img);
@@ -53,7 +53,7 @@ function getProduct()
     };
     xhttp.open("POST", "/Lapkart/Product", true);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    xhttp.send("p_id="+pid); 
+    xhttp.send("pid="+pid); 
 }
 
 function addToCart()
@@ -64,8 +64,8 @@ function addToCart()
         var token = localStorage.getItem("token");
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            if(this.responseText == "successful")
+        if (this.readyState === 4 && this.status === 200) {
+            if(this.responseText === "successful")
             {
                 window.open("Cart.html","_self");
             }
@@ -73,7 +73,7 @@ function addToCart()
         };
         xhttp.open("POST", "/Lapkart/AddToCart", true);
         xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        xhttp.send("p_id="+window.pid+"&userid="+userid+"&token="+token);
+        xhttp.send("pid="+window.pid+"&userid="+userid+"&token="+token);
     }
     else
     {

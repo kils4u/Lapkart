@@ -13,12 +13,12 @@ function Navbar_login()
 {
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
-    if(token != null && userid != null){
+    if(token !== null && userid !== null){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var data = JSON.parse(this.responseText);
-            if(data.token_info[0].status == "successful")
+            if(data.token_info[0].status === "successful")
             {
                 window.isLogged = true;
                 var name = data.token_info[0].name;
@@ -73,7 +73,7 @@ function Navbar_login()
                 var login = document.createElement("a");
                 login.setAttribute("class","nav-link");
                 login.setAttribute("href","login.html");
-                login.innerHTML = "Login & Register"
+                login.innerHTML = "Login & Register";
                 ele.appendChild(login);
             }
         }
@@ -89,17 +89,17 @@ function logout()
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
     var googleToken = localStorage.getItem("googleToken");
-    if(token != "" && userid != ""){
+    if(token !== "" && userid !== ""){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var data = this.responseText;
-            if(data == "successful")
+            if(data === "successful")
             {
                 window.isLogged = false;
                 localStorage.removeItem("token");
                 localStorage.removeItem("userid");
-                if(googleToken != null)
+                if(googleToken !== null)
                 {
                     signOut();
                 }
@@ -129,12 +129,12 @@ function logincheck()
 {
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
-    if(token != null && userid != null){
+    if(token !== null && userid !== null){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var data = JSON.parse(this.responseText);
-            if(data.token_info[0].status == "successful")
+            if(data.token_info[0].status === "successful")
             {
                 window.isLogged = true;
                 window.open("Home.html","_self");

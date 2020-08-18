@@ -56,7 +56,7 @@ public class Login extends HttpServlet {
                     op = "{\"tokens\" : [{ \"status\" : \"successfull\",";
                     op += "\"token\" : \"" + token + "\",";
                     op += "\"userid\" : \"" + uid + "\"}]}";
-                    stmt.executeUpdate("insert into users_token values("+token+",'"+uid+"','"+ email +"',null)");
+                    stmt.executeUpdate("insert into users_token values("+token+",'"+uid+"','"+ email +"')");
                 }
                 else
                 {

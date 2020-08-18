@@ -25,7 +25,7 @@ public class RemoveFromCart extends HttpServlet {
         String userid = request.getParameter("userid");
         String cartid = request.getParameter("cartid");
         
-        String op = "";
+        String op = null;
         
         Connection c;
         ResultSet rs;

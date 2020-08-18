@@ -3,13 +3,13 @@ function load_orders()
 {
     var token = localStorage.getItem("token");
     var userid = localStorage.getItem("userid");
-    if(token != null && userid != null)
+    if(token !== null && userid !== null)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var resp = this.responseText;
-            if(resp != null)
+            if(resp !== null)
             {
                 var MyOrder = JSON.parse(resp);
                 var len = MyOrder.orders.length;
@@ -221,7 +221,7 @@ function create_item(item)
     row.appendChild(col1);
     row.appendChild(col2);
     
-    list.appendChild(row)
+    list.appendChild(row);
     
     return list;
 }

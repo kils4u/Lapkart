@@ -44,8 +44,6 @@ public class RegisterGoogleUSer extends HttpServlet {
         op += "\"token\" : \"null\",";
         op += "\"userid\" : \"null\"}]}";
         
-        System.out.print("name = "+name + " email = "+email);
-        
         try {
             Class.forName("org.postgresql.Driver");
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/lapkart","postgres", "kils4u");
@@ -67,7 +65,7 @@ public class RegisterGoogleUSer extends HttpServlet {
                 op = "{\"tokens\" : [{ \"status\" : \"successfull\",";
                 op += "\"token\" : \"" + token + "\",";
                 op += "\"userid\" : \"" + userid + "\"}]}";
-                s.executeUpdate("insert into users_token values("+token+","+userid+",'"+ email +"',null)");
+                s.executeUpdate("insert into users_token values("+token+","+userid+",'"+ email +"')");
             }
             else
             {
@@ -80,7 +78,7 @@ public class RegisterGoogleUSer extends HttpServlet {
                     lname = full_name[1];
                     
                     rs = s.executeQuery("select MAX(userid) from users");
-                    if(rs.next())
+                    if(rs.next() && rs.getString("max")!= null)
                         uid = rs.getInt("max");
                     
                     if(uid < 100)
@@ -102,7 +100,7 @@ public class RegisterGoogleUSer extends HttpServlet {
                     op = "{\"tokens\" : [{ \"status\" : \"successfull\",";
                     op += "\"token\" : \"" + token + "\",";
                     op += "\"userid\" : \"" + uid + "\"}]}";
-                    s.executeUpdate("insert into users_token values("+token+","+uid+",'"+ email +"',null)");
+                    s.executeUpdate("insert into users_token values("+token+","+uid+",'"+ email +"')");
                 }
             }
             

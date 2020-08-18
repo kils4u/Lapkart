@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 @WebServlet(urlPatterns = {"/top_brands"})
 public class top_brands extends HttpServlet {
     
-    String query = "select * from brand where b_id In(select brand_id from top_brands)";
+    String query = "select * from brand where bid In(select brand_id from top_brands)";
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Connection c = null;
@@ -40,19 +40,20 @@ public class top_brands extends HttpServlet {
             if(rs.next())
             {
                 output = "{ \"top_brands\" : [ ";
-                output += "{ \"b_id\" : \"" + rs.getString("b_id") + "\",";
-                output += "\"b_name\" : \"" + rs.getString("b_name") + "\",";
-                output += "\"b_logo\" : \"" + rs.getString("b_logo") + "\",";
-                output += "\"b_rating\" : \"" + rs.getString("b_rating") + "\"}";
+                output += "{ \"bid\" : \"" + rs.getString("bid") + "\",";
+                output += "\"bname\" : \"" + rs.getString("bname") + "\",";
+                output += "\"blogo\" : \"" + rs.getString("blogo") + "\",";
+                output += "\"brating\" : \"" + rs.getString("brating") + "\"}";
             }
             while(rs.next())
             {
-                output += ",{ \"b_id\" : \"" + rs.getString("b_id") + "\",";
-                output += "\"b_name\" : \"" + rs.getString("b_name") + "\",";
-                output += "\"b_logo\" : \"" + rs.getString("b_logo") + "\",";
-                output += "\"b_rating\" : \"" + rs.getString("b_rating") + "\"}";
+                output += ",{ \"bid\" : \"" + rs.getString("bid") + "\",";
+                output += "\"bname\" : \"" + rs.getString("bname") + "\",";
+                output += "\"blogo\" : \"" + rs.getString("blogo") + "\",";
+                output += "\"brating\" : \"" + rs.getString("brating") + "\"}";
             }
-            output += "] }";
+            if(output != null)
+                output += "] }";
             
             response.setContentType("application/json;charset=UTF-8");
             PrintWriter out = response.getWriter();
